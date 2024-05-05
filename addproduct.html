@@ -1,0 +1,45 @@
+<!-- 관리자 계정에서 상품을 추가하는 페이지  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>새로운 상품 추가</title>
+</head>
+<body>
+  <h1>새로운 상품 추가</h1>
+  <form id="newProductForm">
+    <label for="productName">상품 이름:</label>
+    <input type="text" id="productName" name="productName"><br><br>
+    <label for="productDesc">상품 설명:</label>
+    <input type="text" id="productPrice" name="productPrice"><br><br>
+    <label for="productPrice">상품 가격:</label>
+    <input type="text" id="productPrice" name="productPrice"><br><br>
+    <label for="productPrice">상품이미지:</label>
+    <input type="file" id="productPrice" name="productPrice"><br><br>
+    <label for="productPrice">상품ID:</label>
+    <input type="number" id="productID" name="productPrice"><br><br>
+    
+    <button type="submit">상품 추가</button>
+  </form>
+
+  <script>
+    document.getElementById('newProductForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // 폼 기본 동작 막기
+
+      const formData = new FormData(this); // 폼 데이터 가져오기
+      fetch('/addproduct', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.text())
+      .then(message => {
+        alert(message); // 서버로부터 받은 메시지 알림
+      })
+      .catch(error => {
+        console.error('상품 추가 중 오류 발생:', error);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+html,*{
+    margin:0;
+    padding:0;
+}
+.weathercast{
+    align-items: center;
+    text-align: center;
+    
+    font-style: bold;
+}
+.weatherbackground{
+    background-image: url("img/cloudy.png");
+    background-size: cover;
+    background-size:100px 200%
+}

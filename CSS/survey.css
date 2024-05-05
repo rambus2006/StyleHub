@@ -1,0 +1,9 @@
+.content{
+    background-color: yellow;
+    align-items: center;
+}
+.survey{
+    width:30%;
+    height:50%;
+    background-color: pink;
+}

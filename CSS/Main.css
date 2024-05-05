@@ -1,0 +1,90 @@
+
+html,
+body {
+  position: relative;
+  height: 400px;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+/* 아이콘 4개 부분 */
+.row{
+    justify-content: center;
+    height: auto;
+}
+
+.icon{
+    height: 100px;
+    width:100px;
+    background-color: #F6EBE2;
+    border: 1px solid #9A7B57 ;
+    border-radius:30% ;
+    justify-content: center;
+    font-size: 4rem;
+    margin: 10px;
+    
+}
+a {
+  color: #000;
+  /* text-decoration: underline; */
+  text-decoration: none;
+}
+.content{
+    height: 400px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 옷부분 */
+.cloth{
+    /* 나중에 gap 으로 조정하기 */
+    margin-top: 10px; 
+    
+    background-color: #F6EBE2;
+    justify-content: center;
+
+}
+.cloth>img{
+    width: 80%;
+    height: auto;
+    padding: 10% 0;
+}
+
+/* 색 추천 부분 */
+.color-box {
+  width: 60px;
+  height: 60px;
+  margin: 20px auto;
+  border: 2px solid #333;
+  border-radius: 50%;
+}
+/* 찾는 스타일 아이콘 */
+.icon > img, svg {
+  vertical-align: center;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
