@@ -13,7 +13,7 @@
 ---
 
 
-<프로젝트 기술 스택>
+<프로젝트 기술 스택><br>
 [![My Skills](https://skillicons.dev/icons?i=figma,html,css,js,nodejs,mysql,git,github)](https://skillicons.dev)
 
 <폴더구조(프로젝트 완성후 추가 예정)>
