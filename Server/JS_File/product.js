@@ -38,19 +38,19 @@ app.post('/login', (req, res) => {
   });
 });
 
-app.get('/', (req, res) => {
+app.get('/product', (req, res) => {
   connection.query('SELECT * FROM Products', (err, rows) => {
     if (err) {
       console.error('쿼리 실행 중 오류 발생: ' + err.stack);
       return;
     }
-    // 상품 목록을 가져와서 HTML 템플릿에 넘깁니다.
-    res.send(`
+    const html = `
       <h1>상품 목록</h1>
       <ul>
-        ${rows.map(row => `<li>${row.name}: $${row.price}</li>`).join('')}
+        ${rows.map(row => `<li> ${row.name}: $${row.price} <img src="${row.image_url}"></li>`).join('')}
       </ul>
-    `);
+    `;
+    res.send(html);
   });
 });
 
