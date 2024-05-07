@@ -16,3 +16,8 @@ body {
     background-color: white;
     
 }
+.btn{
+    width: 120px;
+    height: 0px;
+    background-color: #9A7B57;
+}
