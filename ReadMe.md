@@ -1,5 +1,3 @@
-<center><img src="./img/Style & Hub.png" style="width:80px; height:auto;" /></center>
-
 <스타일허브>
 
 기존의 쇼핑몰 서비스에 기능을 추가한 프로젝트입니다. 
@@ -18,3 +16,6 @@
 
 <폴더구조(프로젝트 완성후 추가 예정)>
 폴더구조-> 우클릭 -> GenerateintoTree 클릭해서 복사 -> ``` 복붙 ``` -> 해서 쓰기 
+
+<메인화면>
+![image](https://github.com/rambus2006/StyleHub/assets/101540710/b14713dc-af2c-4846-bd01-9abce858d2a7)
